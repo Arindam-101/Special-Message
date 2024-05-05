@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">         
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Special Message for You</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
+        padding-top: 50px;
+        background-color: #ffdb4d; /* Bright yellow background */
+      }
+
+      .heart {
+        font-size: 100px;
+        color: #ff1493; /* Deep pink heart color */
+        animation: heartbeat 0.8s infinite alternate; /* Heartbeat animation */
+      }
+
+      @keyframes heartbeat {
+        from {
+          transform: scale(1);
+        }
+        to {
+          transform: scale(1.1);
+        }
+      }
+
+      #message {
+        margin-top: 20px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        background-color: #fff; /* White background for message */
+        animation: bounceIn 1s ease forwards;
+      }
+
+      @keyframes bounceIn {
+        from {
+          opacity: 0;
+          transform: translateY(-50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      img {
+        max-width: 500px; /* Increase maximum width for larger image (5x) */
+        width: 100%; /* Ensure image fills container */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 50%; /* Round image */
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease-in-out;
+      }
+
+      img:hover {
+        transform: scale(1.1); /* Image zoom on hover */
+      }
+
+      #funny-text {
+        font-size: 24px;
+        color: #ff1493; /* Deep pink text color */
+        font-weight: bold;
+        margin-top: 20px;
+        animation: shake 0.5s infinite alternate; /* Shake animation */
+      }
+
+      @keyframes shake {
+        from {
+          transform: translateX(-5px);
+        }
+        to {
+          transform: translateX(5px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="heart">&#10084;&#65039;</div>
+    <div id="message">
+      <p>প্রিয় mishtii ,</p>
+      <p>এখানে শুধু আপনার জন্য একটি বিশেষ আমার কথা ...</p>
+      <p>
+        তোমার ভালোবাসায় ডুবে বৃষ্টির ফোঁটা থেকে সাগর হয়ে যাব, তোমা থেকে শুরু হয়ে
+        তোমাতেই শেষ হয়ে যাব
+      </p>
+      <p>ভালোবাসা, শুধু তোমার aluu</p>
+    </div>
+    <div id="image-container">
+      <img
+        src="C:\Users\theen\OneDrive\Pictures\Camera Roll\Your Photo.jpg"
+        alt="Your Photo"
+      />
+    </div>
+    <div id="funny-text">Click the heart to feel the love!</div>
+
+    <script>
+      // Function to open the page automatically
+      function openPage() {
+        window.open("", "_blank");
+      }
+      // Automatically open the page when the document is loaded
+      document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(openPage, 1000); // Open the page after 1 second (1000 milliseconds)
+      });
+    </script>
+  </body>
+</html>
